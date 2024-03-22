@@ -13,10 +13,12 @@ switch(colocacao){
 /*
 temos primeiro um expressao, variavel colocação em uma corrida, foi 1.
 
+
 switch caso colocacao, ai vai pros case:
 caso for 1, vai seguir certos comandos, "primeiro lugar".
 a cada final de bloco tenho que usar o break.
 E pode ter varios console block dentro do comando.
+
 
 declaracao Switch case: O switch avalia uma expressao, de acordo com o resultado, ele compara
 com os case. Caso algum caso coincidade com alguma expressao, ele executa o bloco
