@@ -9,6 +9,10 @@ console.log("fim do programa")
 
 
 /* 
+Quando o if tem só um comando do interior caso acima.
+não preciso colocar chave, normalmente é usado, mais não e
+obrigado. Só quando tiver mais que um comando no bloco.
+
 O codigo assim é false, porque num 10 não é maior que 10.
 
 Vai ser sempre:

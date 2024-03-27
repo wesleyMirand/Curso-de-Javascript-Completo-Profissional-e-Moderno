@@ -21,7 +21,7 @@ o comando 0 a 9 vezes até chegar em 10. Ai a cada interação vou interar o con
 1 com "i++" de incremento.  "i++ pode ser : i = i+1, i++, i+=2". Nesse caso estou
 aumentando a cada interação o i em 1. 
 
-0-1-2-3-4-5-6-7-8-9-10 é continua, i é menor que 10 não! ele é igual a 10!
+0-1-2-3-4-5-6-7-8-9-10 é continua, i é menor que sim! ele continua ate 10!
 até que : i<10 retorna falso e sai nao interando mais o looping.
 E continua a execução normal do programa.
 
@@ -29,14 +29,14 @@ Resumindo o for vai ser executado enquanto a sua condicao, for vdd.
 
 console.log("Inicio do programa")
 
-for(let i=0; i < 10; i++) {
+for(let i=0; i<10; i++) {
      console.log("CFB Cursos")
 }
 
 console.log("Fim do programa")
 
-Executo inicio do programa, fico preso no loop intero 10 rodando 10vezes, não é mais falso
-sai do loop e segue a rotina normal do programa.
+Executo inicio do programa, fico preso no loop intero 10 rodando 10vezes, não é mais 
+falso sai do loop e segue a rotina normal do programa.
 
 Ele começa i inicia 0, i é menor que 10 ? SIM VDD.incremento 1 e executo o comando, 
 ai testo de novo e nao vou usar mais o "i=0" porque ele é so pra iniciar do incremento
