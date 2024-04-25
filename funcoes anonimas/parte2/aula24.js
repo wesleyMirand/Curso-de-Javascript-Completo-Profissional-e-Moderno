@@ -5,7 +5,6 @@ const f = function (...valores){
       }
       return res
 }
-console.log(f(10,5))
 
 /* 
 
