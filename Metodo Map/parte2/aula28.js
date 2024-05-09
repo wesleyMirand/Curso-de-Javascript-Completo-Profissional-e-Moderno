@@ -1,7 +1,7 @@
 const cursos = ['HTML', 'CSS', 'JavaScript', 'PHP', 'React']
 
 let c=cursos.map((el, i) => {
-      return el
+      return "<div>" + el + "</div>"
 })
 
 console.log(c)
