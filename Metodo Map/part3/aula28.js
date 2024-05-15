@@ -5,7 +5,7 @@ console.log(el)
 
 el.map((e, i) => {
       e.innerHTML =  "CFB CURSOS"
-})
+}
 
 
 /* const cursos = ['HTML', 'CSS', 'JavaScript', 'PHP', 'React'ssfffffgflhjhf
