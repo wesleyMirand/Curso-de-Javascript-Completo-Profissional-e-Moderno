@@ -8,18 +8,20 @@ const dc6= document.getElementById("c6");
 const arrayElementos = [dc1, dc2, dc3, dc4, dc5, dc6]
 
 const colecaoHTML = document.getElementsByTagName("div")
+colecaoHTML = [...colecaoHTML]
 
-console.log(arrayElementos)
 console.log(colecaoHTML)
+
+colecaoHTML.map((e) => {
+      console.log(e)
+})
 
 /* 
 
-TagName: Obter collection de elementos.
-ById só retorna um elemento. 
-QUando tenho  colecaohtml= document.getelementbytagname () retorna uma serie de elementos.
-Array elementos e colecao html. arrayelementos e colecaHTML.
-o primeiro por ser byId tem mais recursos que o Bytagname. Porem na hora de apresentar
-os elementos o tagname mostra mais detalhado.
-
+a forma normal menos direta, transforma em uma var e usar o collection.
+colecao recebe spread de colecao.
+qualquer forma pode ser usada.
+o Melhor é o passado com o spread no const porque se torna imutavel, spread espalha e volta 
+a elementos com array.
 
 */
