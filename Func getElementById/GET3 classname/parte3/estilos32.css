@@ -22,3 +22,9 @@
       background-color: #444;
       color: #ccc;
 }
+
+.destaque{
+      background-color: #444 !important;
+      color: #ccc !important;
+      border-color: #f00 !important;
+}

@@ -6,6 +6,10 @@ console.log(cursosTodos)
 console.log(cursosC1)
 console.log(cursosC2)
 
+cursosTodos.map((el) => {
+      el.classList.add("destaque")
+})
+
 /* 
 
 Levo isso para um array operar de forma melhor o contorno dos metodos disponiveis,
@@ -17,6 +21,11 @@ que usam a classe c1 e a classe c2.
 1- 12colections
 2- 6 colections que possuem a claase c1
 2- 6colections que possuem a classe c2
-
+Vou criar uma classe destaque no css, usar o back, color, border com a chave
+!important, que serve para que as propriedades substituam as propriedades atuais.
+Tal elemento que ja possua essa classe e tem essas propriedades.
+E vamos percorrer e add todos elementos, no cursos todos usar o map, el , pegar
+elemento por elemento e chama o el.classlist.add e adicionar esses elementos a classe
+("destaque") Todos elementos receberam a classe destaque.
 
 */
