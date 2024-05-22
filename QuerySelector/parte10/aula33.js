@@ -16,8 +16,7 @@ console.log(query_divTodas)
 
 /*
 
-vamos especificar, pegando todos elementos das div, porem so as div com parametro
-class.
-Vai diminuir para 12 elementos e os 2 ultimo não estão na coleção. Por nao possuirem o atributo class.
+Agora vou por html em p , js  e css, no html.
+E todos que tem tag "P", o p vai ficar com texto maior.
 
 */
