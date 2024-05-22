@@ -23,5 +23,7 @@ const query_divTodas = document.querySelector("div")
 console.log(divTodas)
 O querydiv Todas, eu peguei somente 1 div de todos elementos, que são div retornam o primeiro elemento,
 que encontra da chave especifica.Achou a primeira div da pagina ele vai retorna.
+Eu peguei somente uma div de todas elementos, de todos elementos e vai retorna o primeiro da chave,
+achou  o primeiro html vai retorna ele.
 
 */
