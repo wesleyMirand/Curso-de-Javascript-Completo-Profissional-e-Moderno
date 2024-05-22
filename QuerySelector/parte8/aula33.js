@@ -11,7 +11,7 @@ const query_cursosC2 = [...document.querySelectorAll(".c2")]
 //const query_cursoEspecial = document.querySelector("#c1")
 const query_cursoEspecial = document.querySelectorAll("#c1")[0]
 
-console.log(query_divTodas)
+console.log(query_cursosC1)
 //console.log(query_cursosC2)
 
 /*
