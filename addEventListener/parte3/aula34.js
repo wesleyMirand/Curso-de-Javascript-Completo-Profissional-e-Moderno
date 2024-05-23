@@ -1,8 +1,6 @@
-const c1 = document.querySelector("#c1")
-
-c1.addEventListener("click", () => { 
+const msg = () => {
   alert("clicou")
-})
+}
 
 /* 
 

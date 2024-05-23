@@ -1,15 +1,9 @@
+//const c1 = document.getElementById("c1")
 
+const c1= document.querySelector("c1")
 
-/* 
-
-O function :
-function msg(){
-  alert("clicou")
-}
-
-Pode ser também um arrowfuntion, const msg recebe essa arrow.
 const msg = () => {
   alert("clicou")
 }
 
-*/
+c1.addEventListener("click",  msg)
