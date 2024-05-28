@@ -6,7 +6,7 @@ const cursos = ["HTML", "CSS", "JavaScript", "PHP", "React", "MySQL", "ReactNati
 cursos.map((el, chave) => {
     //console.log(chave)
     const novoElemento=document.createElement("div")
-    novoElemento.setAttribute("id", "c"+ chave+1)
+    novoElemento.setAttribute("id", "c"+ chave)
     novoElemento.setAttribute("class", "curso c1")
     novoElemento.innerHTML = el
     caixa1.appendChild(novoElemento)
@@ -15,7 +15,6 @@ cursos.map((el, chave) => {
 
 /*
 
-Agora somar o id com 1  só por chave + 1 ai vai de c1 ate c7.
-criamos elemento e adicionamos no script em tempo real
+Agora somar o id com 1  só por chave + 1 ai vai de c1 ate c7!
 
 */
