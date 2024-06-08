@@ -14,5 +14,16 @@ cursos.map((el, chave)=> {
     comandos.setAttribute("class", "comandos")
 
     const rb=document.createElement("input")
-    rb.setAttribute("type", )
+    rb.setAttribute("type", "radio")
+    rb.setAttribute("name", "rb_curso")
+
+    comandos.appenChild(rb)
+
+    novoElemento.appendChild(comandos)
+
+    caixaCursos.appendChild(novoElemento)
+})
+
+btnCursoSelecionado.addEventListener("click", (evt) =>{
+    
 })
