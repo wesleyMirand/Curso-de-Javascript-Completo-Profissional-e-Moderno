@@ -25,21 +25,30 @@ cursos.map((el, chave)=> {
 
 })
 
-btnCursoSelecionado.addEventListener("click", (evt) => {
+const radioSelecionado = () => {
     const todosRadios = [...document.querySelectorAll("input[type=radio")]
-    let radioSelecionado = todosRadios.filter((ele, ind, arr) =>{
+    const radioSelecionado = todosRadios.filter((ele, ind, arr) =>{
         return ele.checked
     })
-    radioSelecionado = radioSelecionado[0]
-   // const CursoSelecionado = radioSelecionado.parentNode.parentNode.firstChild.textContent
-   const cursoSelecionado = radioSelecionado.parentNode.previousSibling.textContent //Retorna toda vez o mesmo texto no console do browser. somente 1 parent node, é um proximo irmaonextsibling ou irmao anterior previousSibling.è um objetotext precisa usar text.content
-   alert ("Curso selecionado: " + cursoSelecionado)
-   
-   /*console.log(CursoSelecionado)
-      console.log(radioSelecionado)
-      console.log(todosRadios)
-    */
-    
+    return radioSelecionado[0]
+}
+
+btnCursoSelecionado.addEventListener("click", (evt) => {
+    const rs = radioSelecionado()
+    try{
+        const cursoSelecionado = rs.parentNode.previousSibling.textContent //Retorna toda vez o mesmo texto no console do browser. somente 1 parent node, é um proximo irmaonextsibling ou irmao anterior previousSibling.è um objetotext precisa usar text.content
+        alert ("Curso selecionado: " + cursoSelecionado)
+    } catch(ex) {
+        alert("Selecione um curso")
+    }  
 })
 
-//ParentNode, childNodes[nodenumber], firstChild, lastChild, nextSibling, previousSiblingh
+btnRemoverCurso.addEventListener("click",(evt) => {
+    const rs = radioSelecionado()
+    if(rs!=undefined) {
+    const cursoSelecionado = rs.parentNode.parentNode
+    cursoSelecionado.remove()
+    }else {
+        alert("selecione curso")
+    }
+})
