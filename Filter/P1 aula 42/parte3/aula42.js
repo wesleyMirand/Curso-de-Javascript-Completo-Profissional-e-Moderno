@@ -23,7 +23,3 @@ cursos.map((el, chave)=> {
 
     caixaCursos.appendChild(novoElemento)
 })
-
-btnCursoSelecionado.addEventListener("click", (evt) =>{
-    
-})
