@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objetos</title>
+    <link rel="stylesheet" href="aula58.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Cadastro de Carros</h1>
+        <form id="carForm">
+            <label for="carName">Nome do Carro:</label>
+            <input type="text" id="carName" name="carName" required>
+
+            <label for="carType">Tipo do Carro:</label>
+            <select id="carType" name="carType" required>
+                <option value="1">Esportivo</option>
+                <option value="2">Utilitário</option>
+                <option value="3">Passeio</option>
+                <option value="4">Militar</option>
+            </select>
+
+            <button type="submit">Cadastrar Carro</button>
+        </form>
+        <h2>Carros Cadastrados</h2>
+        <ul id="carList"></ul>
+    </div>
+    <script src="aula58.js"></script>
+</body>
+</html>
