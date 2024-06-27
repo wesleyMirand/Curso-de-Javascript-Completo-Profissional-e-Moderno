@@ -1,8 +1,6 @@
-class Pessoa{
-    constructor(pnome, pidade) {
+class Carro {
+    constructor(pnome, ptipo) {
         this.nome = pnome;
-        this.idade = pidade;
-        this.canal = "Youtube"
         if (ptipo == 1) {
             this.tipo = "Esportivo";
             this.velmax = 300;
@@ -36,21 +34,10 @@ class Pessoa{
         return [this.nome, this.tipo, this.velmax];
     }
 
-    setNome(nome) {
-        this.nome = nome
-    }
-    setTipo(tipo) {
-        this.tipo = tipo
-    }
-    setVelMax(velmax) {
-        this.velmax = velmax
-    }
-
     info() {
         console.log(`Nome: ${this.nome}`);
         console.log(`Tipo: ${this.tipo}`);
         console.log(`V.Max: ${this.velmax}`);
-        console.log(`Canal : ${this.canal}`);
         console.log("----------------------------");
     }
 }
@@ -88,11 +75,5 @@ let c2 = new Carro("Super Luxo", 2);
 let c3 = new Carro("Bombadao", 4);
 let c4 = new Carro("Carrego tudo", 3);
 
-c1.setNome("Super Veloz")
-c1.setVelMax (500)
-
-c1.info()  
-
-/* POsso criar classes e trabalhar com elas, preciso do operador new, podemos usar prop 
-this.canal la encima
-*/
+carros.push(c1, c2, c3, c4);
+displayCarros();

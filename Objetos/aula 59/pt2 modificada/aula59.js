@@ -8,7 +8,7 @@ class Pessoa {
         return this.nome;
     }
 
-    getIdade() { // Corrigido para manter a capitalização consistente
+    getIdade() {
         return this.idade;
     }
 
@@ -16,7 +16,7 @@ class Pessoa {
         this.nome = nome;
     }
 
-    setIdade(idade) { // Corrigido para manter a capitalização consistente
+    setIdade(idade) {
         this.idade = idade;
     }
 
@@ -32,16 +32,6 @@ let pessoas = []
 const btn_add = document.querySelector("#btn_add");
 const res = document.querySelector(".res");
 
-const addPessoa = () => {
-    res.innerHTML= ""
-    pessoas.map ((p) => {
-        const  div= document.createElement("div")
-        div.setAttribute("class", "pessoa")
-        div.innerHTML= `Nome: ${p.getNome()}<br/>Idade:${p.getIdade()}`
-        res.appendChild(div)
-    })
-}
-
 btn_add.addEventListener("click", (evt) => {
     const nome = document.querySelector("#f_nome");
     const idade = document.querySelector("#f_idade");
@@ -50,5 +40,15 @@ btn_add.addEventListener("click", (evt) => {
     nome.value = "";
     idade.value = "";
     nome.focus();
-    addPessoa()
+    console.log(pessoas);
+    updateRes();
 });
+
+function updateRes() {
+    res.innerHTML = "";
+    pessoas.forEach(p => {
+        const divPessoa = document.createElement("div");
+        divPessoa.innerHTML = `<p>Nome: ${p.getNome()}</p><p>Idade: ${p.getIdade()}</p><hr>`;
+        res.appendChild(divPessoa);
+    });
+}
