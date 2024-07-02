@@ -10,6 +10,10 @@ const btn_addCarro = document.querySelector("#btn_addCarro")
 
 let a_carros = []
  
+a_carros.filter((el) => {
+    
+})
+
 f_tipoMilitar.addEventListener("click" ,(evt) => {
     f_nome = ""
     f_portas.value = 0
@@ -31,12 +35,15 @@ const gerenciarExibicaoCarros = () => { //para criar o carro de acordo com o con
     carros.innerHTML= ""
     a_carros.forEach((c) => { 
     const div = document.createElement("div")
+    const btn = document.createElement("button")
+    btn.innerHTML = "remover"
     div.setAttribute("class", "carro")
     div.innerHTML =  `Nome: ${c.nome}<br/>`
     div.innerHTML =  `Portas: ${c.portas}<br/>`
     div.innerHTML =  `Cor: ${c.cor}<br/>`
     div.innerHTML =  `Blindagem: ${c.blindagem}<br/>`
     div.innerHTML =  `Munição: ${c.municao}<br/>`
+    div.append =  (btn)
     carros.appendChild(div)
     })
 }
