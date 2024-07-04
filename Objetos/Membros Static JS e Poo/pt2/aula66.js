@@ -2,7 +2,11 @@ class Npc {
     constructor (energia) {
         this.energia = energia //
         this.alerta = false //todos npc vao ter alerta
-    
+    }
+    info = function () {
+        console.log(`Energia : ${this.energia}`)
+        console.log(`Alerta : ${(this.energia? "Sim" : "Não")}`)
+        console.log("-----------------------------------------")
     }
 }
 
@@ -10,9 +14,13 @@ const npc1  = new Npc (100) //novo npc
 const npc2 = new Npc(80)
 const npc3 = new Npc(30)
 
-console.log(npc1.energia)//passa a energia dele 
-console.log(npc2.energia) //valores diferente cada um tem sua propriedade
-console.log(npc3.energia)
+npc1.alerta = true
+npc2.alerta = true
+npc3.alerta = true
+
+npc1.info()
+npc2.info()
+npc3.info()
 
 /* 
 
