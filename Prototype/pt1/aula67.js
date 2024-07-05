@@ -4,4 +4,23 @@ const Nave = function (energia){
 }
 
 const n1 = new Nave (100)
-Nave
+
+
+Nave.prototype.vidas = 3
+Nave.prototype.disparos = function() {
+    if (this.disparos > 0){
+        this.disparos --
+    }
+}
+
+n1.disparar()
+n1.disparar()
+n1.disparar()
+n1.disparar()
+n1.disparar()
+n1.disparar()
+n1.disparar()
+
+console.log(Nave)
+console.log(n1)
+console.log(n1.disparos)
