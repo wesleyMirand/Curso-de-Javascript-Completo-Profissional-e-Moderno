@@ -1,6 +1,10 @@
 const Nave = function (energia){
     this.energia = energia
     this.disparos = 3
+    this.teste = function () { //criando uma funcao dentro da propria nave
+        //nao justifica o uso do prototype usar sempre sempre que for superior a classe, 
+        //praque criar um metodo superior a classe, se posso ir e add na classe. Porque tenque pensar em tempo real de execução da pagina, uma prop ou argumento dentro da classe.
+    }
 }
 
 const n1 = new Nave (100)
