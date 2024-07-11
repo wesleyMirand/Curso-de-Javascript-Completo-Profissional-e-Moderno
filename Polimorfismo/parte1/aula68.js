@@ -3,9 +3,20 @@ class Carro{
         this.turbo = new this.turbo(estagioTurbo)
         if(tipo ==1){
             this.velMax=120
+            this.nome = "normal"
         }else if(tipo==2){
             this.velMax= 160
+            this.nome = "esportivo"
+        }else if(tipo==3){
+            this.velMax = 200
+            this.nome = "super esportivo"
         }
+        this.velMax += this.turbo
+    }
+    info(){
+        console.log(this.nome)
+        console.log(this.velMax)
+        console.log(this.turbo)
     }
 }
 
@@ -21,5 +32,10 @@ class turbo {
             this.pot = 100
         }
     }
-
 }
+
+/* 
+
+Poli: conceito orientacao a objetos
+
+*/
