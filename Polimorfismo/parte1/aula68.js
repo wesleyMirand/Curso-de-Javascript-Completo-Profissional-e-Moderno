@@ -34,6 +34,35 @@ class turbo {
     }
 }
 
+class CarroEspecial extends Carro{
+    constructor(estagioTurbo){
+        super(4, estagioTurbo)
+        this.velMax = 300+this.turbo.pot
+        this.nome = "Carro Especial"
+    }
+    info(){
+        if(this.tipoInfo ==1){
+            super.info()
+        }else{
+            console.log(`Nome...:${this.nome}`)
+            console.log(`Vel.Max:${this.velMax}`)
+            console.log(`Turbo...:${this.turbo.pot}`)
+            console.log("---------------------------")
+        }
+        }
+
+        }
+
+        }
+    }
+}
+
+const c1 = new Carro(1, 0)
+const c2 = new Carro(1, 1)
+const c3 = new CarroEspecial(3)
+
+c1.info()
+c2.info()
 /* 
 
 Poli: conceito orientacao a objetos
