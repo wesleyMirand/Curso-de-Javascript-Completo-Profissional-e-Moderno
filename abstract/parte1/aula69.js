@@ -1,5 +1,13 @@
-class Carro{
+class CarroPadrao{//classe para todos os carros
+    constructor(){
+    this.rodas = 4 
+    this.portas = 4  
+    }
+}
+
+class Carro extends CarroPadrao{
     constructor(tipo, estagioTurbo){
+        super() //some o erro this
         this.turbo = new this.turbo(estagioTurbo)
         if(tipo ==1){
             this.velMax=120
@@ -17,6 +25,10 @@ class Carro{
         console.log(this.nome)
         console.log(this.velMax)
         console.log(this.turbo)
+        console.log(this.rodas = 4)
+        console.log(this.turbo = 4)
+        console.log(this.ligado = false)
+        console.log("-------------------")
     }
 }
 
@@ -37,6 +49,7 @@ class turbo {
 class CarroEspecial extends Carro{
     constructor(estagioTurbo){
         super(4, estagioTurbo)
+        this.tipoInfo = 1
         this.velMax = 300+this.turbo.pot
         this.nome = "Carro Especial"
     }
@@ -60,6 +73,8 @@ c1.info()
 c2.info()
 /* 
 
-Poli: conceito orientacao a objetos
+conceito classes abstratas em js: desreito a quando tem classe
+abstrata nao pode ser instaciada, so serve pra outras classes,
+ser extendida, herança base para outras
 
 */
