@@ -1,0 +1,65 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    border: none;
+    box-sizing: border-box;
+    font-size: large;
+}
+
+/*classe calc que é nossa base , o . transforma em classe, colocar em todos 
+:     display:flex;
+    justify-content:center;
+    align-items: center ;
+
+    */
+
+.calc{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column; /* para ficar embaixo um do outro */
+}
+
+.div_nome{
+    display:flex;
+    justify-content:center;
+    align-items: center ;
+}
+
+.div_display{
+    display:flex;
+    justify-content:center;
+    align-items: center ;
+
+}
+
+.div_teclas{
+    display:flex;
+    justify-content:center;
+    align-items: center ;
+    width: 220px;  /* cada tecla tem 50, com borda de 3, sao 4 = 200, 206 , 12 24 225px
+    inves de encolher dar um flex-wrap de wrap para as teclas pulem a linha e fique igual na calculadora.
+    O calculo certo é pq foi calculado o tamanho que eu queria, se por um borda preta com pixel solid vermeho  */
+    flex-wrap: wrap;
+    border : 1px solid #f00;
+}
+
+.tecla{
+    display:flex;
+    justify-content:center;
+    align-items: center ;
+    background-color: #aaa;
+    border: 3px solid #888;
+    font-weight:  bold;  /* ficar mais destacado */
+    border-radius: 10px; /* arrendonda linha em volta */
+    width: 50px; /* largura */
+    height: 50px; /*altura */
+    cursor: pointer; /* nas teclas*/
+    margin: 2px; /* espaco em cada tecla*/
+}
+
+.teclaOp{ /* tecla especial de op*/
+    background-color: #f44 !important; /*quando for uma tecla especial usar o !import, para 
+    elas substituirem as tecla e metodo da mesma classe*/
+    border-color:#800 !important;
+}

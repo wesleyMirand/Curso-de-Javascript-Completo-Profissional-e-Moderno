@@ -1,7 +1,17 @@
 class CarroPadrao{//classe para todos os carros
-    constructor(){
+    constructor(){//Classes abstratas objeto em JS
+    if (this.constructor === CarroPadrao) {
+        throw new TypeError("Esta classe não poder instaciada") //nao pode ser criada uma nova new
+    }
+    if(this.ligar ===undefined){
+        throw new TypeError("É obrigatorio implementar o metodo ligar") //dispara o erro
+    }
+    if(this.desligar ===undefined){
+        throw new TypeError("É obrigatorio implementar o metodo desligar") //dispara o erro
+    }
     this.rodas = 4 
     this.portas = 4  
+    this.ligado = false
     }
 }
 
@@ -19,7 +29,7 @@ class Carro extends CarroPadrao{
             this.velMax = 200
             this.nome = "super esportivo"
         }
-        this.velMax += this.turbo
+        this.velMax += this.turbo.pot
     }
     info(){
         console.log(this.nome)
@@ -30,6 +40,12 @@ class Carro extends CarroPadrao{
         console.log(this.ligado = false)
         console.log("-------------------")
     }
+    ligar() {
+        this.ligado = true
+    } //implementando ligar carr
+    desligar() {
+        this.ligado = false
+    } //obrigator desligar
 }
 
 class turbo {
@@ -50,7 +66,7 @@ class CarroEspecial extends Carro{
     constructor(estagioTurbo){
         super(4, estagioTurbo)
         this.tipoInfo = 1
-        this.velMax = 300+this.turbo.pot
+        this.velMax = 300 + this.turbo.pot
         this.nome = "Carro Especial"
     }
     info(){
@@ -68,9 +84,11 @@ class CarroEspecial extends Carro{
 const c1 = new Carro(1, 0)
 const c2 = new Carro(1, 1)
 const c3 = new CarroEspecial(3)
+//const c4 = new CarroPadrao() nao espera  nada no seu contructor
 
 c1.info()
 c2.info()
+
 /* 
 
 conceito classes abstratas em js: desreito a quando tem classe
