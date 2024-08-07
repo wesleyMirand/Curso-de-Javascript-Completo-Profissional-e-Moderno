@@ -15,10 +15,14 @@ const relogio = () => {
     let hora = data.getHours() //hora
     hora = hora <10?"0" + hora : hora
 
-    let minutos = data.getMinutes() //minuts
+    let minuto = data.getMinutes() //minuts
     minuto = minuto <10?"0" + minuto : minuto
-    console.log(hora)
-}
 
-relogio()
+    let segundo = data.getSeconds() //segundos
+    segundo = segundo <10?"0" + segundo : segundo
+    const hora_completa = hora + ":" + minuto + ":" + segundo
+    div_relogio.innerHTML = hora_completa
+}
+//chamar relogio a cada segundo intervalo, setInterval chama funcao atras de outra funcao chamando funcao
+const intervalo = setInterval (relogio, 1000)
 
