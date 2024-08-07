@@ -1,0 +1,58 @@
+<!--EVento retrato uma aba, exibir ou executar, fechar e abri gaveta aba.-->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Curso 68</title>
+      <link rel="stylesheet" type="text/css" href="estilos70.css">   
+</head>
+<body>
+      <div id = "calc" class="calc">
+            <div id="calc_principal" class="calc_principal">
+            <div id = "div_nome" class="div_nome">
+                  <p>Calculadora WeWe Cursos</p>
+            </div>
+            <div id="div_display" class="div_display">
+                  <p id = "display" class="display">0</p>
+            </div>
+            <div id="div_teclas" class="div_teclas">
+                  <button id="tcpy" class="tecla teclaOp">CPY</button>
+                  <!--Tudo que precisa pro display comecar-->
+                  <button id="tlimpar" class="tecla">CL</button>  <!--op diferente nao vai ta inclusa na operacao-->
+                  <button id="t(" class="tecla num">(</button>
+                  <button id="t)" class="tecla num">)</button>
+                  <button id="t7" class="tecla num">7</button>
+                  <button id="t8" class="tecla num">8</button>
+                  <button id="t9" class="tecla num">9</button>
+                  <button id="t+" class="tecla teclaOp op">+</button> <!--no final de cada linha as operacoes-->
+                  <button id="t4" class="tecla num">4</button>
+                  <button id="t5" class="tecla num">5</button>
+                  <button id="t6" class="tecla num">6</button>
+                  <button id="t-" class="tecla teclaOp op">-</button>
+                  <button id="t1" class="tecla num">1</button>
+                  <button id="t2" class="tecla num">2</button>
+                  <button id="t3" class="tecla num">3</button>
+                  <button id="tx" class="tecla teclaOp op">x</button> <!--Nas tecla de OP por teclaOp-->
+                  <button id="t0" class="tecla num">0</button>
+                  <button id="tseparador" class="tecla num">,</button>
+                  <button id="tigual" class="tecla teclaOp res">=</button> <!-- vai dar o resultado-->
+                  <button id="t/" class="tecla teclaOp op">/</button>
+                  </div>
+            </div>
+            <div id="calc_aba" class="calc_aba" >  <!--Button abrir aba-->  
+                  <img id="img_aba_calc" src="seta_direita.svg" />
+            </div>
+      </div>
+     <!-- <input type="text" id="teste" name="teste" style="border: 1px solid #000;"/>      COpiar somente o conteudo que vier-->
+
+      <script src="aula70.js"></script>
+</body>
+</html>
+
+<!-- 
+     
+      Podemos criar um elemento HTML e anexar esse elemento, dentro da nossa pagina a qualquer momento.
+      adicioanr nos scripts os button , btnAdicionarnovocursoantes 
+-->

@@ -1,0 +1,109 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    border: none;
+    box-sizing: border-box;
+    font-size: large;
+}
+
+/*classe calc que é nossa base , o . transforma em classe, colocar em todos 
+:     display:flex;
+    justify-content:center;
+    align-items: center ;
+
+    */
+
+.calc{ /* finalidade diferente da calc principal nossa aba no canto certinho */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    position: absolute;
+    /* top: 0px;  */
+    left:  -230px; /* sendo exibido diminuir*/
+    transition: all 0.2s;
+}
+
+.calc_exibir{
+    left: 0px !important;
+    transition: all 0.2s;
+}
+
+.calc_principal{ /* mudei */
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column; /* para ficar embaixo um do outro */
+    background-color: #eee;
+    border: 3px solid #bbb;
+    width: 230px;
+    border-radius: 5px;
+}
+
+
+/* titulo */
+.div_nome{
+    display:flex;
+    justify-content:center;
+    align-items: center ;
+    width: 220px;
+}
+
+
+.div_teclas{
+    display:flex;
+    justify-content:center;
+    align-items: center ;
+    width: 220px;  /* cada tecla tem 50, com borda de 3, sao 4 = 200, 206 , 12 24 225px
+    inves de encolher dar um flex-wrap de wrap para as teclas pulem a linha e fique igual na calculadora.
+    O calculo certo é pq foi calculado o tamanho que eu queria, se por um borda preta com pixel solid vermeho  */
+    flex-wrap: wrap;
+}
+
+.tecla{
+    display:flex;
+    justify-content:center;
+    align-items: center ;
+    background-color: #aaa;
+    border: 3px solid #888;
+    font-weight:  bold;  /* ficar mais destacado */
+    border-radius: 10px; /* arrendonda linha em volta */
+    width: 50px; /* largura */
+    height: 50px; /*altura */
+    cursor: pointer; /* nas teclas*/
+    margin: 2px; /* espaco em cada tecla*/
+}
+
+.teclaOp{ /* tecla especial de op*/
+    background-color: #f44 !important; /*quando for uma tecla especial usar o !import, para 
+    elas substituirem as tecla e metodo da mesma classe*/
+    border-color:#800 !important;
+}
+
+/* DISPLAY */
+.div_display{
+    display:flex;
+    justify-content:center;
+    align-items: center ;
+    width: 220px;
+}
+
+.display{
+    width: 220px;
+    background-color: #8a8;
+    text-align: right;
+    padding: 5px;
+    font-family: monospace;
+    font-size: larger;
+}
+
+.calc_aba{
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 50px;
+    background-color: rgba("128, 128, 128, 0.2"); /*aba*/
+    border-radius: 0px 5px 5px 0px;
+    cursor: pointer;
+}
