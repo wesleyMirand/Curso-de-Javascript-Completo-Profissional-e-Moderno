@@ -44,7 +44,7 @@ input[type='number']. #num_objetos{
 .palco{
     display: flex;
     width: 100%;
-    min-height: 100vh;
+    min-height: 100vh; /*espaco restante*/
     min-height: fill-available;
     min-height: -webkil-fill-available;
     background-color: #eee;
