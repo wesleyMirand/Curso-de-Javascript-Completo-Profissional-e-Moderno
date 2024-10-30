@@ -1,1 +1,1 @@
-const objetos = document.getElementById()
+const objetos = document.getElementById("objetos")
